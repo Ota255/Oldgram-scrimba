@@ -1,5 +1,73 @@
+
+/* Main Selectors */
+*{
+    box-sizing: border-box;
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "source Sans 3";
+}
+.container{
+    max-width: 375px;
+    /* border: 5px solid firebrick ; */
+    margin: 0 auto;
+}
+img{
+    align-self: center;
+}
+.flex{
+    display: flex;
+}
+.heading{
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.logo{
+    width: 127px;
+}
+.profile{
+    width: 35px;
+    border-radius: 50%;
+}
+.post-heading{
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+.post-img{
+    width: 100%;
+}
+.description-wrap{
+    padding: 15px 10px;
+}
+.icons-wrap{
+    gap: 5px;
+}
+.icon{
+    width: 8%;
+}
+.icon:hover, .icon:active{
+    opacity: 50%;
 }
 
+/* Typography */
+
+h3{
+    font-size: 13pt;
+    line-height: 13pt;
+    margin: 0;
+    font-weight: 400;
+}
+.mini-text{
+    font-size: 12pt;
+}
+.bold{
+    font-weight: 800;
+}
+.description-wrap h3{
+    margin-top: 10px;
+}

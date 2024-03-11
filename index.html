@@ -1,9 +1,44 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="images/logo.png">
+        <header>
+            <div class="container flex heading">
+                <img class="logo" src="images/logo.png">
+                <img class="profile" src="images/user-avatar.png">
+            </div>
+        </header>
+        <main>
+            <section class="posts-wrapper container" id="posts-wrapper">
+                <section class=" post-wrapper">
+                    <div class="post-heading flex">
+                        <img class="profile post-profile" src="./images/avatar-vangogh.jpg">
+                        <div>
+                            <h3 class="bold">Vincent van Gogh</h3>
+                            <h3 class="mini-text">Zundert, Netherlands</h3>
+                        </div>
+                    </div>
+                        <img class="post-img" src="./images/post-vangogh.jpg">
+                    <div class="description-wrap">
+                        <div class="icons-wrap flex">
+                            <img class="icon" src="./images/icon-heart.png" alt="Like">
+                            <img class="icon" src="./images/icon-comment.png" alt="Comment">
+                            <img class="icon" src="./images/icon-dm.png" alt="Dm">
+                        </div>
+                        <h3 class="bold">21,492 likes</h3>
+                        <h3><span class="bold">vincey1853</span> just took a few mushrooms lol</h3>
+                    </div>
+                </section>
+            </section>
+        </main>
         <script src="index.js"></script>
+        </main>
     </body>
 </html>
