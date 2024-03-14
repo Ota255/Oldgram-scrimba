@@ -81,7 +81,8 @@ function renderPost(postInfo, Index){
     postWrapper.append(currentPost)
     likeBTN = document.getElementById(`likeEl${postIndex}`)
     likeBTN.addEventListener("click", function(){
-        console.log("TEST")})
+        posts[postIndex].likes++
+        renderAll(posts)})
 }
 
 function renderAll(allPosts){
