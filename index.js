@@ -67,15 +67,21 @@ function renderPost(postInfo, Index){
     descriptionDiv.classList += "description-wrap"
 
     descriptionDiv.innerHTML = `<div class="icons-wrap flex">
-                                    <img class="icon" src="./images/icon-heart.png" alt="Like">
+                                    <img id="likeEl${postIndex}"class="icon" src="./images/icon-heart.png" alt="Like">
                                     <img class="icon" src="./images/icon-comment.png" alt="Comment">
                                     <img class="icon" src="./images/icon-dm.png" alt="Dm">
                                 </div>
                                     <h3 class="bold">${likes} likes</h3>
                                     <h3><span class="bold">${username}</span> ${comment}</h3>`
-    currentPost.append(descriptionDiv)
 
+    
+    currentPost.append(descriptionDiv)
+    
+    
     postWrapper.append(currentPost)
+    likeBTN = document.getElementById(`likeEl${postIndex}`)
+    likeBTN.addEventListener("click", function(){
+        console.log("TEST")})
 }
 
 function renderAll(allPosts){
